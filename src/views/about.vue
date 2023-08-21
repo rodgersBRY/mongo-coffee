@@ -58,6 +58,7 @@
 
       <div class="quality-policy">
         <h2>Quality Policy & Objectives</h2>
+        <div class="divider"></div>
         <p>The ICO Council Resolution 420 (May 2004), which suggests voluntary aims for the minimum quality export requirements on daily activities, is continually adopted by Mongo International Ltd. The goal is to limit the export of inferior beans, which will tighten supply chains and lead to higher pricing.
         </p>
         <p>We are in the midst of implementing a quality management system in our manufacturing process that transforms coffee tree fruit into exportable green bean in order to show customers and concerned regulatory organizations the consistent quality of our products. Through continuous system improvement, we can increase customer satisfaction. Because the producer cannot control too many factors during the cultivation of green coffee, such as weather, diseases, and pests, the ISO system starts when the cherry is picked and ends when the container is delivered to the ship's side.
@@ -65,8 +66,16 @@
       </div>
 
       <section class="uniqueness">
-        <div class="info"></div>
-        <div class="image"></div>
+        <div class="info-div">
+          <h2 class="title">Uniqueness of Kenyan Coffee</h2>
+          <div class="details" v-for="(prop, i) in properties" :key="i">
+            <h3>{{ prop.title }}</h3>
+            <p>{{ prop.details }}</p>
+          </div>
+        </div>
+        <div class="image">
+          <img width="100%" src="@/assets/business.jpg" alt="unique kenyan coffee">
+        </div>
       </section>
     </main>
 
@@ -86,21 +95,26 @@ export default {
           icon: "mdi-barley",
           tab: "MISSION",
           content:
-            "Jowam Coffee Trading Limited is committed to transforming the lives and livelihoods of coffee farmers, socially and economically by availing to them modern inclusive technologies for coffee farming, milling and beans evaluation and ensure production of the best quality coffee that will, in turn, generate more income for them.",
+            "By providing cutting-edge inclusive technologies for coffee farming, milling, and bean evaluation, Mongo International Ltd is dedicated to transforming the social and economic well-being of coffee farmers. This will ensure the production of coffee of the highest quality, which will increase their income.",
         },
         {
           icon: "mdi-camera-document",
           tab: "VISION",
           content:
-            "To export large volumes of coffee from the region and beyond to international markets, sustain quality and help in reviving coffee farming in Kenya and the region as a viable business entity.",
+            "To revive coffee cultivation in Kenya and the region as a viable business enterprise, export significant quantities of coffee from the region and beyond to global markets, and maintain quality.",
         },
         {
           icon: "mdi-car-brake-retarder",
           tab: "GOALS & OBJECTIVE",
           content:
-            "We are determined to be the best coffee dealers and merchants in the region and beyond, to promote unique coffees to the whole consumer world, to always provide our clients with the best quality, affordable coffee and to guarantee quality to our clients under the guidance of our directors who have decades-long experience in the industry. One of our main goals is to promote majority small-scale farmers by marketing their coffee and thereby creating a steady source of income for them",
+            "Under the direction of our directors, who have decades of experience in the business, we are committed to being the best coffee dealers and merchants in the area and beyond, to promote distinctive coffees to the entire consumer world, to consistently offer our clients the highest-quality, most reasonably-priced coffee, and to guarantee quality to our clients. One of our primary objectives is to support the majority of small-scale farmers by marketing their coffee and providing them with a reliable source of income.",
         },
       ],
+      properties: [
+        { title: "Weather", details: "In Kenya's coffee-growing regions, temperatures of no higher than 190 Celsius (350F) and evenly spaced rainfall are the ideal climatic conditions for producing high-quality coffee." },
+        { title: "Coffee Harvesting", details: "In Kenya, handpicking is the preferred method of coffee harvesting. By doing so, the possibility of blending ripe and unripe berries is eliminated, guaranteeing a product of consistent quality." },
+        {title: "Quality Control", details: "The Coffee Directorate of Kenya must receive samples from Kenyan coffee growers for analysis. The sale of coffee is restricted to authorized growers."}
+      ]
     };
   },
 };
@@ -124,6 +138,26 @@ export default {
   background: var(--primary-red-color);
 }
 
+.quality-policy {
+  text-align: center;
+  margin: 4rem auto;
+  background-color: var(--faded-white-color);
+  padding: 2rem;
+  border-radius: 10px;
+  .divider {
+    width: 10%;
+    margin: 2rem auto;
+    height: 2px;
+    background-color: var(--primary-red-color);
+  }
+}
+
+.uniqueness {
+  display: flex;
+  background-color: var(--faded-white-color);
+}
+
+// desktop screen
 @media screen and (min-width: 1000px) {
   h1 {
     font-size: 50px;
@@ -157,8 +191,33 @@ export default {
       width: 400px;
     }
   }
+
+  .quality-policy {
+    width: 70%;
+    h2 {
+      margin-bottom: 1rem;
+    }
+  }
+
+  .uniqueness {
+    .info-div {
+      flex: 3;
+      padding: 2rem 3rem;
+      .details {
+        margin-left: 3rem;
+        width: 80%;
+        h3 {
+          margin-bottom: 1rem;
+        }
+      }
+    }
+    .image {
+      flex: 3;
+    }
+  }
 }
 
+// mobile screen
 @media screen and (max-width: 1000px) {
   h1 {
     font-size: 40px;
@@ -183,6 +242,10 @@ export default {
   }
   .values {
     flex-direction: column;
+  }
+
+  .quality-policy {
+    width: 95%;
   }
 }
 </style>

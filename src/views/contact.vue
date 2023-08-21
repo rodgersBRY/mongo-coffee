@@ -14,62 +14,56 @@
       <div class="contacts-row">
          <section class="contact-form">
         <form action="https://formspree.io/f/mdovnojj" method="POST">
- <div>
-          <input
-            type="text"
-            name="Name"
-            v-model="name"
-            class="input"
-            placeholder="Your Name"
-          />
-          <input
-            type="text"
-            name="Email"
-            v-model="email"
-            class="input"
-            placeholder="Email Address"
-          />
-          <input
-            type="text"
-            name="Subject"
-            v-model="subject"
-            class="input"
-            placeholder="Subject"
-          />
-        </div>
-        <div>
-          <textarea
-            name="Message"
-            v-model="message"
-            cols="60"
-            rows="7"
-            class="input"
-            placeholder="Your Message"
-          >
-          </textarea>
-          <button type="submit" class="send-btn">Submit Feedback</button>
-        </div>
+          <div>
+            <input
+              type="text"
+              name="Name"
+              v-model="name"
+              class="input"
+              placeholder="Your Name"
+            />
+            <input
+              type="text"
+              name="Email"
+              v-model="email"
+              class="input"
+              placeholder="Email Address"
+            />
+            <input
+              type="text"
+              name="Subject"
+              v-model="subject"
+              class="input"
+              placeholder="Subject"
+            />
+          </div>
+          <div>
+            <textarea
+              name="Message"
+              v-model="message"
+              cols="60"
+              rows="7"
+              class="input"
+              placeholder="Your Message"
+            >
+            </textarea>
+            <button type="submit" class="send-btn">Submit Feedback</button>
+          </div>
 
-        </form>
-       
-          </section>
+          </form>
+        </section>
 
         <section class="location">
           <h2>Stop By For A Visit</h2>
           <p>
-            <v-icon class="mr-2">mdi-map-marker-outline</v-icon>Pension Towers,
-            4th Floor. Loita Street
+            <v-icon class="mr-2">mdi-map-marker-outline</v-icon>Location: <em>Kericho</em>
           </p>
           <p>
             <v-icon class="mr-2">mdi-email-outline</v-icon>
-            Emails
-          <ul style="list-style:none">
-            <li class="ml-3"><em>trading@jowamcoffee.com</em> </li>
-            <li class="ml-3"><em>kelvin.bundi@jowamcoffee.com</em> </li>
-          </ul>
+            Email: <em>langatp@gmail.com</em>
           </p>
           <p>
-            <v-icon class="mr-2">mdi-phone-outline</v-icon>Phone: 254728919092, 254722762945
+            <v-icon class="mr-2">mdi-phone-outline</v-icon>Phone: <em>254722121969</em>
           </p>
 
           <!-- <div class="social-media">
@@ -104,31 +98,27 @@ export default {
 </script>
 
 <style scoped lang="scss">
-
-.japanese .title  {
-  color: #e09f55;
-}
-
 textarea {
   resize: none;
 }
+
 .contact-banner {
-  background-image: url("../assets/about2.jpg");
+  background-image: url("../assets/contact.jpg");
   background-size: cover;
-  color: white;
+  color: var(--accent-yellow-color);
   display: flex;
 }
 
 .contact-form {
   .input {
-    background: rgb(236, 236, 236);
+    background: var(--faded-white-color);
     border: 1px solid rgb(220, 225, 220);
     &:focus {
       outline: none;
     }
   }
   button {
-    background: rgb(131, 154, 131);
+    background: var(--accent-yellow-color);
     color: white;
     padding: 15px;
     width: 100%;
@@ -189,16 +179,9 @@ textarea {
     font-size: 50px;
   }
 
-  .japanese {
-    width: 60%;
-    margin: 1rem auto 3rem auto;
-    display: flex;
-    justify-content: space-around;
-  }
-
   .contact-banner {
     background-attachment: fixed;
-    height: 60vh;
+    height: 70vh;
     padding-left: 2rem;
     justify-content: center;
     align-items: flex-end;
