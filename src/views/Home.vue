@@ -17,7 +17,7 @@
 
       <section class="about-us">
         <div class="about-text pa-5">
-          <h2>ABOUT <span class="green--text">US</span></h2>
+          <h2>ABOUT <span>US</span></h2>
           <p>
             <em
               >We are among the top exporter of green Arabica coffee beans from Kenya to the rest of the globe.
@@ -33,7 +33,7 @@
         <div class="about-img">
           <img
             width="100%"
-            :src="require('../assets/img/jowam7.jpg')"
+            :src="require('../assets/about2.jpg')"
             alt="about jowam coffee"
           />
         </div>
@@ -41,7 +41,7 @@
 
       <section class="business-concept">
         <div>
-          <h1>BUSINESS CONCEPTS</h1>
+          <h1 class="green--text">BUSINESS CONCEPTS</h1>
           <p>
             Mongo International LTD has developed into a dependable coffee retailer
             and exporter of Kenyan green Arabica coffee by focusing on the accessibility
@@ -114,10 +114,10 @@ export default {
 <style scoped lang="scss">
 main {
   .banner-div {
-    background-image: url("../assets/img/home-background.jpg");
+    background-image: url("../assets/home-background.jpg");
     background-size: cover;
     background-repeat: no-repeat;
-    color: white;
+    color: var(--faded-white-color);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -126,14 +126,18 @@ main {
   .about-us {
     display: flex;
     align-items: center;
+
+    h2 > span {
+      color: var(--accent-yellow-color);
+    }
   }
 
   .business-concept {
-    background-image: url("../assets/about1.webp");
+    background-image: url("../assets/business.jpg");
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
-    color: white;
+    color: black;
     display: flex;
     justify-content: center;
     align-items: center;

@@ -54,7 +54,7 @@
           margin: 0 1rem;
           &:hover {
             cursor: pointer;
-            color: green;
+            color: var(--primary-red-color);
           }
         }
       }
@@ -67,7 +67,7 @@
       }
       a {
         text-decoration: none;
-        color: green;
+        color: var(--primary-red-color);
       }
     }
   }

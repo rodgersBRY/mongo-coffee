@@ -74,8 +74,9 @@
   
   <style scoped lang="scss">
   .header {
-    background: white;
+    background: var(--primary-green-color);
     display: flex;
+    color: var(--faded-white-color);
     justify-content: space-between;
     align-items: center;
     position: fixed;
@@ -87,13 +88,6 @@
       img {
         position: relative;
         left: 2%;
-      }
-      h1 {
-        margin-left: 20px;
-        text-align: center;
-        span {
-          color: rgb(130, 202, 130);
-        }
       }
     }
     .nav-links ul {
@@ -109,16 +103,9 @@
         font-weight: bold;
         &:hover,
         &.active {
-          color: #ba8445;
+          color: var(--accent-yellow-color);
           cursor: pointer;
         }
-      }
-      .jowam-btn {
-        text-decoration: none;
-        color: white;
-        background: #ba8445;
-        padding: 1rem;
-        border-radius: 10px;
       }
     }
   }
@@ -151,14 +138,14 @@
       padding: 5px;
       .logo-div {
         img {
-          width: 50px;
+          width: 150px;
           height: 50px;
         }
       }
       .nav-links {
         z-index: 1;
         width: 0;
-        background: black;
+        background: var(--primary-green-color);
         color: white;
         height: 100vh;
         position: absolute;

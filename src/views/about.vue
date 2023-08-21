@@ -33,7 +33,7 @@
         </div>
         <div class="about-img">
           <img
-            :src="require('../assets/img/plantation.jpg')"
+            :src="require('../assets/team.jpg')"
             alt="jowam values"
           />
         </div>
@@ -54,6 +54,19 @@
           </v-card-title>
           <v-card-text>{{ val.content }}</v-card-text>
         </v-card>
+      </section>
+
+      <div class="quality-policy">
+        <h2>Quality Policy & Objectives</h2>
+        <p>The ICO Council Resolution 420 (May 2004), which suggests voluntary aims for the minimum quality export requirements on daily activities, is continually adopted by Mongo International Ltd. The goal is to limit the export of inferior beans, which will tighten supply chains and lead to higher pricing.
+        </p>
+        <p>We are in the midst of implementing a quality management system in our manufacturing process that transforms coffee tree fruit into exportable green bean in order to show customers and concerned regulatory organizations the consistent quality of our products. Through continuous system improvement, we can increase customer satisfaction. Because the producer cannot control too many factors during the cultivation of green coffee, such as weather, diseases, and pests, the ISO system starts when the cherry is picked and ends when the container is delivered to the ship's side.
+        </p>
+      </div>
+
+      <section class="uniqueness">
+        <div class="info"></div>
+        <div class="image"></div>
       </section>
     </main>
 
@@ -95,10 +108,10 @@ export default {
 
 <style scoped lang="scss">
 .about-banner {
-  background-image: url("../assets/img/home-background.jpg");
+  background-image: url("../assets/home-background.jpg");
   background-size: cover;
   background-repeat: no-repeat;
-  color: white;
+  color: var(--faded-white-color);
   display: flex;
 }
 
@@ -108,7 +121,7 @@ export default {
 
 .values {
   display: flex;
-  background: rgb(28, 28, 28);
+  background: var(--primary-red-color);
 }
 
 @media screen and (min-width: 1000px) {

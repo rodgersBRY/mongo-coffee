@@ -72,37 +72,11 @@
             <v-icon class="mr-2">mdi-phone-outline</v-icon>Phone: 254728919092, 254722762945
           </p>
 
-          <div class="social-media">
+          <!-- <div class="social-media">
             <v-btn text large href="https://www.instagram.com/jowamcoffee/" color="orange darken-2" style="text-transform: lowercase;">
-              <v-icon class="mr-3">mdi-instagram</v-icon> jowamcoffee
+              <v-icon class="mr-3">mdi-instagram</v-icon> mongo_coffee
             </v-btn>
-          </div>
-        </section>
-
-        <section class="japanese">
-          <v-card flat width="350px">
-            <v-card-title class="title">会社概要</v-card-title>
-            <v-card-text>
-             <p>代表: Josphat Mwirigi Mburugu</p>
-             <p>役職: Director</p>
-              <p>会社: Jowam Coffee Traders Co.Ltd</p>
-              <p>TEL: +254722762945</p>
-              <p>Mail: trading@jowamcoffee.com</p>
-              <p>Mail: quality@jowamcoffee.com</p>
-              <p>住所: 00200 Nairobi P.O Box 58513-00200 Nairobi Kenya Kenya</p>
-            </v-card-text>
-          </v-card>
-          <v-card  flat width="350px">
-            <v-card-title class="title">海外事業部日本・中国アジア担当</v-card-title>
-            <v-card-text>
-              <p>Alex Nduati アレックスドゥアティ（日本語可</p>
-              <p>TEL: +254722659595</p>
-              <p>Mail: alex.nduati@jowamcoffee.com</p>
-              <p>小川鉄男</p>
-              <p>080-3138-8110</p>
-              <p>Mail: contact@jowamcoffee.co.jp</p>
-            </v-card-text>
-          </v-card>
+          </div> -->
         </section>
       </div>     
     </main>
@@ -139,7 +113,7 @@ textarea {
   resize: none;
 }
 .contact-banner {
-  background-image: url("../assets/about2.webp");
+  background-image: url("../assets/about2.jpg");
   background-size: cover;
   color: white;
   display: flex;
