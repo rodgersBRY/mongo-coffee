@@ -247,5 +247,20 @@ export default {
   .quality-policy {
     width: 95%;
   }
+  .uniqueness {
+    flex-direction: column;
+    .info-div {
+      flex: 3;
+      padding: 2rem 1rem;
+      .details {
+        h3 {
+          margin-bottom: 1rem;
+        }
+      }
+    }
+    .image {
+      flex: 3;
+    }
+  }
 }
 </style>
