@@ -19,11 +19,13 @@
         <div class="about-text pa-5">
           <h2>ABOUT <span>US</span></h2>
           <p>
-            <em
-              >We are among the top exporter of green Arabica coffee beans from Kenya to the rest of the globe.
+            <em>We are among the top exporter of green Arabica coffee beans from Kenya to the rest of the globe.
               Our coffee comes from Kenya, and we sell it in bulk to importers in other nations.</em
             >
           </p>
+          <h3>Bulk Coffee</h3>
+          <p>A blend of both primary and secondary grades <br>AA, AB, C, PB, T, TT, HE, E, UG, UG1, UG2, UG3, UG4, UG5, UG6 </p>
+          
           <p>
             The Middle East, Far East Asian nations, North America, and other places are among our clients.
             The importers of coffee that purchase from us either sell green coffee beans in their home nations as roasters or as distributors.
