@@ -56,21 +56,15 @@
         <section class="location">
           <h2>Stop By For A Visit</h2>
           <p>
-            <v-icon class="mr-2">mdi-map-marker-outline</v-icon>Location: <em>Kericho</em>
+            <v-icon class="mr-2">mdi-map-marker-outline</v-icon>Location: <em>Fort-ternan, Kericho, Kenya</em>
           </p>
           <p>
             <v-icon class="mr-2">mdi-email-outline</v-icon>
-            Email: <em>langatp@gmail.com</em>
+            Email: <em>mongoestates@gmail.com</em>
           </p>
           <p>
-            <v-icon class="mr-2">mdi-phone-outline</v-icon>Phone: <em>254722121969</em>
+            <v-icon class="mr-2">mdi-phone-outline</v-icon>Phone: <em>0722121969/0722454458</em>
           </p>
-
-          <!-- <div class="social-media">
-            <v-btn text large href="https://www.instagram.com/jowamcoffee/" color="orange darken-2" style="text-transform: lowercase;">
-              <v-icon class="mr-3">mdi-instagram</v-icon> mongo_coffee
-            </v-btn>
-          </div> -->
         </section>
       </div>     
     </main>

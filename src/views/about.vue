@@ -34,7 +34,7 @@
         <div class="about-img">
           <img
             :src="require('../assets/team.jpg')"
-            alt="jowam values"
+            alt="mongo values"
           />
         </div>
       </section>
