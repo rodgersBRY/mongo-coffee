@@ -24,6 +24,11 @@
           <router-link active-class="active" tag="li" to="/about">
             About Us
           </router-link>
+
+          <span>|</span>
+          <router-link active-class="active" tag="li" to="/products">
+            Our Products
+          </router-link>
   
           <span>|</span>
           <router-link active-class="active" tag="li" to="/contact">
