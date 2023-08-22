@@ -34,7 +34,7 @@
           <img
             width="100%"
             :src="require('../assets/about2.jpg')"
-            alt="about jowam coffee"
+            alt="about mongo international"
           />
         </div>
       </section>
