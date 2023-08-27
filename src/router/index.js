@@ -6,7 +6,6 @@ import goTo from "vuetify/lib/services/goto";
 import Home from "../views/Home.vue";
 import About from "../views/about.vue";
 import Contact from "../views/contact.vue";
-import Products from "../views/our_products.vue";
 
 Vue.use(Router);
 
@@ -38,6 +37,7 @@ const router = new Router({
     {
       path: "/products",
       name: "Our Products",
+      component: () => import('../views/our_products.vue'),
       meta: {
         title: "Our Products",
       }
