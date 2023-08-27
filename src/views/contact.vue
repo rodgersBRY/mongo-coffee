@@ -65,12 +65,6 @@
           <p>
             <v-icon class="mr-2">mdi-phone-outline</v-icon>Phone: <em>0722121969/0722454458</em>
           </p>
-
-          <!-- <div class="social-media">
-            <v-btn text large href="https://www.instagram.com/jowamcoffee/" color="orange darken-2" style="text-transform: lowercase;">
-              <v-icon class="mr-3">mdi-instagram</v-icon> mongo_coffee
-            </v-btn>
-          </div> -->
         </section>
       </div>     
     </main>
