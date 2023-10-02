@@ -88,7 +88,7 @@
     z-index: 1;
     top: 0;
     width: 100%;
-    transition: top 0.8s ease;
+    transition: top 0.5s ease;
     .logo-div {
       img {
         position: relative;
@@ -157,7 +157,7 @@
         height: 100vh;
         position: absolute;
         overflow: hidden;
-        transition: width 1s ease-in-out;
+        transition: width .6s ease-in-out;
         top: 0;
         left: 0;
         ul {

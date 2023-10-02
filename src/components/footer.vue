@@ -9,6 +9,10 @@
           <router-link active-class="active" tag="li" to="/about">
             About Us
           </router-link>
+
+          <router-link active-class="active" tag="li" to="/products">
+            Our Products
+          </router-link>
   
           <router-link active-class="active" tag="li" to="/contact">
             Contact Us
