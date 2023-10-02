@@ -12,7 +12,7 @@
     <main>
       <section class="about-banner">
         <div>
-          <h1>ABOUT US</h1>
+          <h1><span class="span-about">ABOUT</span> US</h1>
           <p>Coffee is the best medicine</p>
         </div>
       </section>
@@ -127,6 +127,9 @@ export default {
   background-repeat: no-repeat;
   color: var(--faded-white-color);
   display: flex;
+  .span-about {
+    color: var(--accent-yellow-color);
+  }
 }
 
 .about {
@@ -135,7 +138,7 @@ export default {
 
 .values {
   display: flex;
-  background: var(--primary-red-color);
+  background: var(--primary-color);
 }
 
 .quality-policy {
@@ -148,7 +151,7 @@ export default {
     width: 10%;
     margin: 2rem auto;
     height: 2px;
-    background-color: var(--primary-red-color);
+    background-color: var(--accent-yellow-color);
   }
 }
 

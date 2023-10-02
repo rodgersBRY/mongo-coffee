@@ -52,9 +52,9 @@
     },
   
     mounted() {
-      var prevScrollPos = window.pageYOffset;
+      let prevScrollPos = window.pageYOffset;
       window.onscroll = () => {
-        var currentScrollPos = window.pageYOffset;
+        let currentScrollPos = window.pageYOffset;
         if (prevScrollPos > currentScrollPos) {
           document.getElementsByClassName("header")[0].style.top = "0";
         } else {
@@ -79,9 +79,9 @@
   
   <style scoped lang="scss">
   .header {
-    background: var(--primary-green-color);
+    background: white;
     display: flex;
-    color: var(--faded-white-color);
+    color: var(--primary-color);
     justify-content: space-between;
     align-items: center;
     position: fixed;
@@ -106,6 +106,7 @@
         margin: 0 10px;
         padding: 10px 1rem;
         font-weight: bold;
+        transition: color 1s ease;
         &:hover,
         &.active {
           color: var(--accent-yellow-color);
@@ -120,12 +121,13 @@
       display: none;
     }
     .header {
-      padding: 5px 5rem;
+      padding: 0 5rem;
       .logo-div {
+        height: 80px;
         img {
-          height: 60px;
+         width: 100px;
         }
-      }
+       }
   
       .nav-links {
         .mobile-menu-close {
