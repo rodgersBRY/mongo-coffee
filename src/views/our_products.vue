@@ -7,7 +7,7 @@
         <main>
             <section class="banner">
                 <div>
-                    <h1>Our Products</h1>
+                    <h1 class="display-2 banner-title">Our Products</h1>
                     <p>we take pride in presenting an exceptional range of bulk green coffee offerings</p>
                 </div>                
             </section>
@@ -75,7 +75,7 @@ export default {
 <style scoped lang="scss">
 .banner {
     background-image: url('../assets/products.jpg');
-    background-size: cover;    
+    background-size: cover;
     display: flex;
     align-items: flex-end;
     color: white;
@@ -83,6 +83,8 @@ export default {
         margin-bottom: 4rem;
         h1 {
             margin-bottom: 15px;
+            color: var(--accent-color);
+            font-weight: bold;
         }
     }
 }
@@ -104,9 +106,12 @@ export default {
 }
 
 .information {
-    background-image: url("../assets/blends.jpg");
+    background-image: url("../assets/blends.jpg");    
     display: flex;
     margin: 0 auto;
+    h2 {
+        color: var(--primary-color);
+    }
 }
 
 
@@ -138,6 +143,7 @@ export default {
     .banner {
         height: 60vh;
         padding-left: 3rem;
+        background-attachment: fixed;
     }
     .flavors {
         width: 60%;
@@ -151,9 +157,10 @@ export default {
     .information {
         background-size: contain;
         background-repeat: repeat;
+        background-attachment: fixed;
         justify-content: space-around;
         align-items: center;
-        height: 70vh;
+        min-height: 70vh;
         div {
             width: 25%;
             padding: 25px;

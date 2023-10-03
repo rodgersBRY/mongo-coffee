@@ -43,7 +43,7 @@
 
       <section class="business-concept">
         <div>
-          <h1 class="green--text">BUSINESS CONCEPTS</h1>
+          <h1>BUSINESS CONCEPTS</h1>
           <p>
             Mongo International LTD has developed into a dependable coffee retailer
             and exporter of Kenyan green Arabica coffee by focusing on the accessibility
@@ -59,7 +59,7 @@
 
       <section class="why-us">
         <div class="v-card" v-for="(quality, i) in qualities" :key="i">
-          <v-icon size="60" color="green">
+          <v-icon size="60" color="var(--primary-color)">
             {{quality.icon}}
           </v-icon>
           <h4 class="mt-4">{{quality.title}}</h4>
@@ -130,25 +130,31 @@ main {
     align-items: center;
 
     h2 > span {
-      color: var(--accent-yellow-color);
+      color: var(--accent-color);
     }
   }
 
   .business-concept {
     background-image: url("../assets/business.jpg");
-    background-size: cover;
-    background-repeat: no-repeat;
+    background-size: contain;
+    background-repeat: repeat-x;
     background-attachment: fixed;
     color: black;
     display: flex;
     justify-content: center;
     align-items: center;
+    h1  {
+      color: var(--accent-color);
+    }
   }
 
   .why-us {
     padding: 5px 1rem;
     display: flex;
     margin: 1rem 0 4rem 0;
+    .v-card > .divider {
+      background-color: var(--primary-color);
+    }   
   }
 }
 

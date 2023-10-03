@@ -60,7 +60,7 @@
           </p>
           <p>
             <v-icon class="mr-2">mdi-email-outline</v-icon>
-            Email: <em>mongoestates@gmail.com</em>
+            Email: <em>info@mongo.co.ke</em>
           </p>
           <p>
             <v-icon class="mr-2">mdi-phone-outline</v-icon>Phone: <em>0722121969/0722454458</em>
@@ -99,7 +99,7 @@ textarea {
 .contact-banner {
   background-image: url("../assets/contact.jpg");
   background-size: cover;
-  color: var(--accent-yellow-color);
+  color: var(--accent-color);
   display: flex;
 }
 
@@ -112,7 +112,7 @@ textarea {
     }
   }
   button {
-    background: var(--accent-yellow-color);
+    background: var(--accent-color);
     color: white;
     padding: 15px;
     width: 100%;

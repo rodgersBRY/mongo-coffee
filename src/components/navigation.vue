@@ -79,9 +79,9 @@
   
   <style scoped lang="scss">
   .header {
-    background: white;
+    background: rgb(4, 38, 4);
     display: flex;
-    color: var(--primary-color);
+    color: white;
     justify-content: space-between;
     align-items: center;
     position: fixed;
@@ -109,7 +109,7 @@
         transition: color 1s ease;
         &:hover,
         &.active {
-          color: var(--accent-yellow-color);
+          color: var(--accent-color);
           cursor: pointer;
         }
       }

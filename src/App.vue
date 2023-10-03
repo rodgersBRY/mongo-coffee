@@ -15,9 +15,9 @@ export default {
 
 <style>
 :root {
-  --primary-color: rgb(123,28,68);
+  --primary-color: #09402C;
   --primary-red-color: #A63838;
-  --accent-yellow-color: rgb(205,166,95);
+  --accent-color: rgb(204,164,90);
   --faded-white-color: #F2F2F2;
 }
 

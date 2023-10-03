@@ -19,7 +19,7 @@
 
       <section class="about">
         <div class="about-text">
-          <h2>About Our Team And Our Work Ethic</h2>
+          <h2><span>About</span> Our Team And Our Work Ethic</h2>
           <p>
             We have staff members who have a thorough understanding of coffee, particularly Kenyan coffee. This extensive expertise is supported by a great enthusiasm for coffee and decades' worth of combined experience in the industry.
           </p>
@@ -69,7 +69,7 @@
         <div class="info-div">
           <h2 class="title">Uniqueness of Kenyan Coffee</h2>
           <div class="details" v-for="(prop, i) in properties" :key="i">
-            <h3>{{ prop.title }}</h3>
+            <h3 class="unique-header">{{ prop.title }}</h3>
             <p>{{ prop.details }}</p>
           </div>
         </div>
@@ -128,12 +128,15 @@ export default {
   color: var(--faded-white-color);
   display: flex;
   .span-about {
-    color: var(--accent-yellow-color);
+    color: var(--accent-color);
   }
 }
 
 .about {
   display: flex;
+  h2 span {
+    color: var(--primary-color);
+  }
 }
 
 .values {
@@ -151,13 +154,16 @@ export default {
     width: 10%;
     margin: 2rem auto;
     height: 2px;
-    background-color: var(--accent-yellow-color);
+    background-color: var(--accent-color);
   }
 }
 
 .uniqueness {
   display: flex;
   background-color: var(--faded-white-color);
+  .unique-header {
+    color: var(--accent-color);
+  }
 }
 
 // desktop screen
